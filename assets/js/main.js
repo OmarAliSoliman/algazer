@@ -21,6 +21,7 @@ $(document).ready(function () {
   $("#nav-icon1").click(function () {
     $(this).toggleClass("open");
     $(".side_nav").toggleClass("side_nav_open");
+    $('html').toggleClass('side_active');
     // $(".my_navbar").toggleClass("removeBackground");
     // $("#mySidenav").toggleClass("openBurgerMenu");
     // $(".bg-sidenavOpen").toggleClass("burgerMenubodybg");
