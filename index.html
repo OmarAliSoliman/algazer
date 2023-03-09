@@ -5,18 +5,27 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
   <link rel="stylesheet" href="./assets/css/nice-select.css" />
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Home</title>
 </head>
 
 <body>
 
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <div class="side_nav">
     <div class="container-xxl">
@@ -82,7 +91,7 @@
   </div>
 
   <!-- custom navbar -->
-  <div class="custom_navbar bg_color">
+  <div class="custom_navbar bg_color" data-aos="fade-up">
     <div class="container-xxl">
       <div class="navbar_wrapper d-flex align-items-center justify-content-between">
         <div class="side_icon">
@@ -124,12 +133,13 @@
   </div>
 
   <!-- header -->
-  <div class="header bg_color">
+  <div class="header bg_color" data-aos="fade-up">
     <div class="header_wrapper">
       <div class="container-xxl">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 header_slider_col">
             <div class="header_slider_wrapper">
+              <!-- slider 1 -->
               <div class="slider_item">
                 <div class="header_content">
                   <h5 class="header_title">
@@ -153,9 +163,50 @@
                 </div>
                 <div class="header_slider_img">
                   <div class="card_img">
+                    <span class="blog_status">مقال جديد</span>
                     <div class="img_parent">
                       <img src="./assets/images/news_img1.png" alt="" />
                     </div>
+                    <a href="" class="btn_style">
+                      <span>قراءة المزيد</span>
+                      <img src="./assets/images/arrow_icon.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slider 2 -->
+              <div class="slider_item">
+                <div class="header_content">
+                  <h5 class="header_title">
+                    الملك سلمان يصل تونس في زيارة رسمية
+                  </h5>
+                  <div class="divider">
+                    <span></span>
+                    <h6>أحدث الاخبار</h6>
+                  </div>
+                  <p class="header_text">
+                    الجزيرة برس – وكالات- وصل خادم الحرمين الشريفين، الملك
+                    سلمان بن عبدالعزيز، الخميس، إلى جمهورية تونس في زيارة
+                    رسمية. وسيرأس العاهل السعودي وفد المملكة في اجتماعات مجلس
+                    جامعة الدول العربية على مستوى القمة العربية، التي تنعقد في
+                    تونس الأحد القادم
+                  </p>
+                  <div class="date">
+                    <img src="./assets/images/date_icon.svg" alt="" />
+                    <span>الخميس 21 رجب 1440ﻫ 28-3-2019م</span>
+                  </div>
+                </div>
+                <div class="header_slider_img">
+                  <div class="card_img">
+                    <span class="blog_status">مقال جديد</span>
+                    <div class="img_parent">
+                      <img src="./assets/images/news_img1.png" alt="" />
+                    </div>
+                    <a href="" class="btn_style">
+                      <span>قراءة المزيد</span>
+                      <img src="./assets/images/arrow_icon.svg" alt="">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -208,6 +259,74 @@
                       <div class="card_img">
                         <div class="img_parent">
                           <img src="./assets/images/wide_2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wide_body">
+                      <div class="card_title">
+                        <h5>
+                          "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+                          يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
+                          لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم
+                          فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس
+                          نيسي يت أليكيوب
+                        </h5>
+                      </div>
+                      <div class="wide_more">
+                        <div class="time">
+                          <i class="far fa-clock"></i>
+                          <span>منذ ٤ دقيقة</span>
+                        </div>
+                        <div class="arrow_more">
+                          <a href="" class="btn_style">
+                            <img src="./assets/images/arrow_icon.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="wide_news_card">
+                    <div class="wide_img">
+                      <div class="card_img">
+                        <div class="img_parent">
+                          <img src="./assets/images/wide_3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wide_body">
+                      <div class="card_title">
+                        <h5>
+                          "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+                          يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت
+                          لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم
+                          فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس
+                          نيسي يت أليكيوب
+                        </h5>
+                      </div>
+                      <div class="wide_more">
+                        <div class="time">
+                          <i class="far fa-clock"></i>
+                          <span>منذ ٤ دقيقة</span>
+                        </div>
+                        <div class="arrow_more">
+                          <a href="" class="btn_style">
+                            <img src="./assets/images/arrow_icon.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="wide_news_card">
+                    <div class="wide_img">
+                      <div class="card_img">
+                        <div class="img_parent">
+                          <img src="./assets/images/wide_3.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -389,7 +508,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -423,7 +542,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -457,7 +576,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -491,7 +610,7 @@
               </a>
             </div>
             <div class="btn_more_news">
-              <a href="" class="btn_style">
+              <a href="" class="btn_style" data-aos="fade-up">
                 مشاهدة المزيد
                 <img src="./assets/images/arrow_icon.svg" alt="" />
               </a>
@@ -510,7 +629,7 @@
         <div class="news_cards">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -544,7 +663,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -578,7 +697,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -612,7 +731,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -646,7 +765,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -680,7 +799,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -737,7 +856,7 @@
             <div class="watch_now_cards">
               <div class="row">
                 <div class="col-sm-12 col-md-5 col-lg-6">
-                  <div class="big_watch">
+                  <div class="big_watch" data-aos="fade-up">
                     <div class="card_img">
                       <div class="img_parent">
                         <img src="./assets/images/video_2.png" alt="" />
@@ -766,9 +885,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-7 col-lg-6">
+                <div class="col-sm-12 col-md-7 col-lg-6" data-aos="fade-up">
                   <div class="watch_video_scrollable">
                     <ul class="list-unstyled mb-0">
+                      <li>
+                        <div class="wide_news_card">
+                          <div class="wide_img">
+                            <div class="card_img">
+                              <div class="img_parent">
+                                <img src="./assets/images/wide_3.png" alt="" />
+                              </div>
+                              <a href="" class="play_btn play_btn_small">
+                                <i class="fas fa-play"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="wide_body">
+                            <div class="card_title">
+                              <h5>
+                                "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+                                يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا .
+                                يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير
+                                سيتاشن يللأمكو لابورأس نيسي يت أليكيوب
+                              </h5>
+                            </div>
+                            <div class="wide_more">
+                              <div class="time">
+                                <i class="far fa-clock"></i>
+                                <span>منذ ٤ دقيقة</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                       <li>
                         <div class="wide_news_card">
                           <div class="wide_img">
@@ -880,7 +1030,7 @@
   </div>
 
   <!-- ad -->
-  <div class="photo_ad">
+  <div class="photo_ad" data-aos="fade-up">
     <div class="container-xxl">
       <div class="row">
         <div class="col-sm-12 col-lg-12">
@@ -902,7 +1052,7 @@
         <div class="news_cards">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -936,7 +1086,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -970,7 +1120,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1004,7 +1154,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1038,7 +1188,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1072,7 +1222,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1127,7 +1277,7 @@
         <div class="news_cards">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1161,7 +1311,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1195,7 +1345,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1229,7 +1379,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1263,7 +1413,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1297,7 +1447,7 @@
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a class="news_card">
+              <a class="news_card" data-aos="fade-up">
                 <div class="card_img">
                   <div class="img_parent">
                     <img src="./assets/images/news1.png" alt="" />
@@ -1411,6 +1561,8 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/jquery.nice-select.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+  <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

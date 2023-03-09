@@ -5,24 +5,58 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
   <link rel="stylesheet" href="./assets/css/nice-select.css" />
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Galyat</title>
 </head>
 
 <body>
 
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="side_nav">
+    <div class="container-xxl">
+      <div class="side_wrapper">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+        <div class="side_links">
+          <ul class="list-unstyled mb-0">
+            <li><a href="./index.html">الرئيسية</a></li>
+            <li><a href="./amirca.html">أمريكا</a></li>
+            <li><a href="./news-aagela.html">أخبار عاجلة</a></li>
+            <li><a href="">أحدث الاخبار</a></li>
+            <li><a href="">دولي</a></li>
+            <li class="active"><a href="./galyat.html">الجاليات</a></li>
+            <li><a href="./articals.html">مقالات</a></li>
+            <li><a href="./yamen.html">اليمن</a></li>
+            <li><a href="">AljazeeraPost</a></li>
+            <li><a href="">Food&Recipes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- top header -->
-  <div class="top_header">
+  <div class="top_header bg_color">
     <div class="container-xxl">
       <div class="top_head_wrapper">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col col-md-6 col-lg-6">
             <div class="lang">
               <select name="" class="custom_select" id="">
                 <option value="">العربيه</option>
@@ -30,7 +64,7 @@
               </select>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col col-md-6 col-lg-6">
             <div class="social_media">
               <ul class="list-unstyled d-flex align-items-center justify-content-end">
                 <li>
@@ -57,18 +91,27 @@
   </div>
 
   <!-- custom navbar -->
-  <div class="custom_navbar">
+  <div class="custom_navbar bg_color">
     <div class="container-xxl">
       <div class="navbar_wrapper d-flex align-items-center justify-content-between">
+        <div class="side_icon">
+          <div class="menu_icon" data-cursor="-icon">
+            <div id="nav-icon1">
+              <!-- <span></span> -->
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
         <ul class="list-unstyled links d-flex">
-          <li><a href="">الرئيسية</a></li>
-          <li><a href="">أمريكا</a></li>
-          <li><a href="">أخبار عاجلة</a></li>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./amirca.html">أمريكا</a></li>
+          <li><a href="./news-aagela.html">أخبار عاجلة</a></li>
           <li><a href="">أحدث الاخبار</a></li>
           <li><a href="">دولي</a></li>
-          <li><a href="">الجاليات</a></li>
-          <li><a href="">مقالات</a></li>
-          <li><a href="">اليمن</a></li>
+          <li class="active"><a href="./galyat.html">الجاليات</a></li>
+          <li><a href="./articals.html">مقالات</a></li>
+          <li><a href="./yamen.html">اليمن</a></li>
           <li><a href="">AljazeeraPost</a></li>
           <li><a href="">Food&Recipes</a></li>
         </ul>
@@ -87,9 +130,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 
-  <div class="news_deails_page news_deails_video_page">
+  <div class="news_deails_page news_deails_video_page bg_color">
     <div class="container-xxl">
       <div class="news_details_img">
         <div class="card_img">
@@ -104,7 +147,7 @@
 
       <div class="news_details_body">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-8">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
             <div class="newa_cards">
               <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
@@ -333,7 +376,7 @@
               </nav>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
             <div class="news_details_left left_boxes">
               <div class="news_box_left">
                 <h5 class="box_header">أخبار عاجلة</h5>
@@ -748,6 +791,8 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/jquery.nice-select.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+  <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
