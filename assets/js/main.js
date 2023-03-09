@@ -14,29 +14,23 @@ $(document).ready(function () {
     });
   }
 
-
-  $(".nav-icon").on("click", function () {
-    $(this).toggleClass("closed");
-    $(this).parent().toggleClass("menue_open")
+  $("#nav-icon1").click(function () {
+    $(this).toggleClass("open");
     $(".side_nav").toggleClass("side_nav_open");
-    $(".custom_navbar .logo").toggleClass('logoremove');
-
-  })
-
+    // $(".my_navbar").toggleClass("removeBackground");
+    // $("#mySidenav").toggleClass("openBurgerMenu");
+    // $(".bg-sidenavOpen").toggleClass("burgerMenubodybg");
+    // $(this).closest(".customnavbar").find(".logo").fadeToggle();
+  });
   
-
-
-
 
   if ($(".custom_select").length) {
     $(".custom_select").niceSelect();
   }
-
-
 });
 
 new WOW().init();
 
-$(window).on('load', function () {
+$(window).on("load", function () {
   $(".page__loader").addClass("splashNone");
-})
+});
