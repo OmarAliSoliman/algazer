@@ -441,7 +441,7 @@ p {
   z-index: 9999;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  z-index: 999999999999;
+  z-index: 99;
   /* Icon 1 */
 
   #nav-icon1,
@@ -580,6 +580,8 @@ p {
   padding: 14px 0;
 
   .lang {
+    position: relative;
+    z-index: 999;
     .nice-select {
       display: block;
       width: fit-content;
@@ -592,6 +594,8 @@ p {
       }
 
       .list {
+        right: 0;
+        left: unset;
         li {
           text-align: right;
         }

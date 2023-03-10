@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
   }
 
-  if($(".header_slider_wrapper").length){
+  if ($(".header_slider_wrapper").length) {
     $(".header_slider_wrapper").slick({
       rtl: currentDir == "rtl" ? true : false,
       arrow: true,
@@ -21,12 +21,20 @@ $(document).ready(function () {
   $("#nav-icon1").click(function () {
     $(this).toggleClass("open");
     $(".side_nav").toggleClass("side_nav_open");
-    $('html').toggleClass('side_active');
+    $("html").toggleClass("side_active");
     // $(".my_navbar").toggleClass("removeBackground");
     // $("#mySidenav").toggleClass("openBurgerMenu");
     // $(".bg-sidenavOpen").toggleClass("burgerMenubodybg");
     // $(this).closest(".customnavbar").find(".logo").fadeToggle();
   });
+
+  if ($(".bg_side_open").length) {
+    $(".bg_side_open").on("click", function () {
+      $("#nav-icon1").removeClass("open");
+      $(".side_nav").removeClass("side_nav_open");
+      $("html").removeClass("side_active");
+    });
+  }
 
   if ($(".custom_select").length) {
     $(".custom_select").niceSelect();
@@ -41,7 +49,7 @@ $(document).ready(function () {
     });
   }
 
-  if($(".watch_video_scrollable".length)){
+  if ($(".watch_video_scrollable".length)) {
     $(".watch_video_scrollable").mCustomScrollbar({
       theme: "dark",
       alwaysShowScrollbar: 1,
@@ -49,7 +57,6 @@ $(document).ready(function () {
       mouseWheel: { preventDefault: true },
     });
   }
-
 });
 
 $(window).on("load", function () {

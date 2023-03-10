@@ -383,7 +383,7 @@ p {
   z-index: 9999;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  z-index: 999999999999;
+  z-index: 99;
   /* Icon 1 */
 }
 .menu_icon #nav-icon1,
@@ -486,6 +486,10 @@ p {
 .top_header {
   padding: 14px 0;
 }
+.top_header .lang {
+  position: relative;
+  z-index: 999;
+}
 .top_header .lang .nice-select {
   display: block;
   width: -moz-fit-content;
@@ -496,6 +500,10 @@ p {
 .top_header .lang .nice-select::after {
   left: 0;
   right: unset;
+}
+.top_header .lang .nice-select .list {
+  right: 0;
+  left: unset;
 }
 .top_header .lang .nice-select .list li {
   text-align: right;
