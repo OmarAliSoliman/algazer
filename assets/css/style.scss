@@ -223,10 +223,10 @@ p {
   }
 }
 
-.side_active{
+.side_active {
   height: 100vh;
   overflow: hidden;
-  .bg_side_open{
+  .bg_side_open {
     position: fixed;
     top: 0;
     left: 0;
@@ -236,7 +236,6 @@ p {
     z-index: 4;
   }
 }
-
 
 /* side_nav */
 .side_nav {
@@ -286,7 +285,7 @@ p {
         }
         &.active {
           background-color: $mainColor;
-          a{
+          a {
             color: #fff;
           }
         }
@@ -385,9 +384,9 @@ p {
       font-size: 0.9rem;
     }
   }
-  &:hover{
+  &:hover {
     background-color: $mainColor;
-    i{
+    i {
       color: #fff;
     }
   }
@@ -514,8 +513,7 @@ p {
   }
 }
 
-
-.splashscreen{
+.splashscreen {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -526,51 +524,50 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   .loading {
     display: flex;
     gap: 12px;
   }
-  
+
   .loading div {
     width: 20px;
     height: 20px;
     background: white;
     border-radius: 50%;
     box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
-  
+
     animation: cycle 1s ease-in-out infinite;
   }
-  
+
   .loading div:nth-child(1) {
     animation-delay: 0;
   }
-  
+
   .loading div:nth-child(2) {
     animation-delay: 0.2s;
   }
-  
+
   .loading div:nth-child(3) {
     animation-delay: 0.4s;
   }
-  
+
   @keyframes cycle {
     0% {
       transform: translateY(0);
     }
-  
+
     50% {
       transform: translateY(1rem);
     }
-  
+
     100% {
       transform: translateY(0);
     }
   }
-  
 }
 
-.splashscreen_none{
+.splashscreen_none {
   opacity: 0;
   visibility: hidden;
   z-index: -1;
@@ -614,6 +611,9 @@ p {
 /* custom navbar */
 .custom_navbar {
   .navbar_wrapper {
+    ul{
+      align-items: center;
+    }
     li {
       margin-left: 41px;
 
@@ -770,11 +770,10 @@ p {
         }
       }
 
-
       .header_slider_img {
         .card_img {
           height: calc(100vh - (56px + 70px));
-          .blog_status{
+          .blog_status {
             position: absolute;
             top: 0;
             right: 0;
@@ -783,21 +782,21 @@ p {
             padding: 17px 22px;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           }
-          .btn_style{
+          .btn_style {
             position: absolute;
             right: 0;
             bottom: 100px;
             border-radius: 0;
             width: fit-content;
             display: flex;
-            img{
+            img {
               margin-right: 5px;
             }
-            &:hover{
-              span{
+            &:hover {
+              span {
                 color: #000;
               }
-              img{
+              img {
                 filter: brightness(0);
               }
             }
@@ -806,25 +805,25 @@ p {
       }
     }
 
-    .slick-arrow{
+    .slick-arrow {
       top: unset;
       bottom: 40px;
-      &:before{
+      &:before {
         color: #000;
         @extend %inilizeFonrtAwsome_Before_After;
       }
     }
-    .slick-next{
+    .slick-next {
       left: 200px;
       right: unset;
-      &:before{
+      &:before {
         content: url(../images/arrow_right.svg);
       }
     }
-    .slick-prev{
+    .slick-prev {
       left: 100px;
       z-index: 7;
-      &:before{
+      &:before {
         content: "\f053";
         content: url(../images/arrow_left.svg);
       }
@@ -838,19 +837,19 @@ p {
     height: calc(100vh - (56px + 69px));
     .header_news_scroll {
       height: 100%;
-      .mCSB_scrollTools{
+      .mCSB_scrollTools {
         right: 0;
         top: 25px;
         left: unset;
       }
-      #mCSB_1_container{
+      #mCSB_1_container {
         margin-left: 0;
         margin-right: 30px;
       }
     }
     .hot_header {
       position: relative;
-      &::before{
+      &::before {
         content: "";
         width: 11px;
         height: 34px;
@@ -1140,30 +1139,30 @@ p {
       }
     }
 
-    .watch_video_scrollable{
+    .watch_video_scrollable {
       height: 450px;
-      .mCSB_scrollTools{
+      .mCSB_scrollTools {
         width: 10px;
       }
-      .mCSB_dragger_bar{
+      .mCSB_dragger_bar {
         margin: 0;
         width: 100%;
         background-color: $mainColor;
       }
-      .mCSB_draggerContainer{
-        &:before{
+      .mCSB_draggerContainer {
+        &:before {
           content: "";
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #D9D9D9;
+          background-color: #d9d9d9;
           border-radius: 7px;
         }
       }
 
-      .mCSB_draggerRail{
+      .mCSB_draggerRail {
         display: none;
       }
     }
@@ -1601,7 +1600,7 @@ p {
         }
       }
     }
-    .header_hot_news{
+    .header_hot_news {
       height: 59vh;
     }
     // .header_news_scroll {
@@ -1613,6 +1612,24 @@ p {
     }
   }
 }
+
+@media(max-width: 1280px){
+  
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1280px){
+  .custom_navbar{
+    .navbar_wrapper {
+      ul{
+        align-items: center;
+      }
+      li{
+        margin-left: 25px;
+        
+      }
+    }
+  }
+  }
 
 @media (max-width: 1024px) {
   .menu_icon {
@@ -1654,7 +1671,7 @@ p {
       padding: 23px 32px 23px 32px;
       margin-top: 20px;
       height: auto;
-      .header_news_scroll{
+      .header_news_scroll {
         height: 500px;
       }
     }
@@ -1673,11 +1690,9 @@ p {
       }
     }
   }
-  
 }
 
 @media (max-width: 600px) {
-  
   .custom_navbar {
     .navbar_wrapper {
       flex-wrap: wrap;
@@ -1741,13 +1756,14 @@ p {
   }
   .watch_now_section {
     .watch_now_cards {
-      .watch_video_scrollable{
+      padding: 25px 7px;
+      .watch_video_scrollable {
         margin-top: 20px;
       }
       .big_watch {
         .card_body {
-          .date_option{
-            >div{
+          .date_option {
+            > div {
               width: 100%;
             }
             flex-direction: column;
@@ -1761,9 +1777,9 @@ p {
     .news_details_body {
       .news_details_right {
         .news_comments {
-          .comment_option{
+          .comment_option {
             flex-direction: column;
-            a{
+            a {
               width: 100%;
               margin: 10px 0;
               text-align: center;
